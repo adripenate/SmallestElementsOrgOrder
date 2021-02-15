@@ -25,7 +25,7 @@ class FindPairsTest(unittest.TestCase):
     def test_should_work_with_bigger_numbers(self):
         self.assertEqual([6, 2, -10, -9], first_n_smallest([6, 9, 2, -10, -9], 4))
 
-    def test_should_work_with_random_numbers(self):
+    def test_should_work_with_duplicates(self):
         self.assertEqual([4, 2, -8, 2, -2, 0, -1, -9, -4, 2, -6, -7, 2, -5], first_n_smallest([6, 4, 2, -8, 2, -2, 8, 5, 0, 6, -1, 4, 10, -9, 7, -4, 2, -6, -7, 2, -5], 14))
 
 
