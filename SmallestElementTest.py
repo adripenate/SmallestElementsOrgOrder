@@ -4,7 +4,7 @@ import unittest
 class SmallestElement:
     @classmethod
     def first_n_smallest(cls, elements, limit):
-        pass
+        return []
 
 
 class FindPairsTest(unittest.TestCase):
