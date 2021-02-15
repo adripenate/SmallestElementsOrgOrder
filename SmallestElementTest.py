@@ -32,5 +32,9 @@ class FindPairsTest(unittest.TestCase):
     def test_should_give_two_numbers(self):
         self.assertEqual([1, 1], SmallestElement.first_n_smallest([1, 1, 1, 1], 2))
 
+    def test_should_give_smallest_numbers(self):
+        self.assertEqual([1, 1], SmallestElement.first_n_smallest([4, 1, 2, 1], 2))
+
+
 if __name__ == '__main__':
     unittest.main()
