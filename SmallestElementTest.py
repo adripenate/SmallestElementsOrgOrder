@@ -16,6 +16,8 @@ class FindPairsTest(unittest.TestCase):
     def test_should_give_one_number(self):
         self.assertEqual([1], SmallestElement.first_n_smallest([1], 1))
 
+    def test_should_find_one_number(self):
+        self.assertEqual([1], SmallestElement.first_n_smallest([1, 2], 1))
 
 
 if __name__ == '__main__':
