@@ -8,7 +8,7 @@ class SmallestElement:
             return []
         smallest_elements = []
         for element in elements:
-            if element <= limit:
+            if element <= limit and len(smallest_elements) < limit:
                 smallest_elements.append(element)
         return smallest_elements
 
