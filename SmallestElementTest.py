@@ -22,6 +22,9 @@ class FindPairsTest(unittest.TestCase):
     def test_should_give_smallest_numbers(self):
         self.assertEqual([1, 1], first_n_smallest([4, 1, 2, 1], 2))
 
+    def test_should_work_with_negatives(self):
+        self.assertEqual([6, 2, -10, -9], first_n_smallest([6, 9, 2, -10, -9], 4))
+
 
 if __name__ == '__main__':
     unittest.main()
