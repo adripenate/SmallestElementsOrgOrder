@@ -3,15 +3,17 @@ import unittest
 
 class SmallestElement:
     @classmethod
-    def first_n_smallest(cls, elements, limit):
+    def first_n_smallest(self, elements, limit):
         if limit == 0:
             return []
         smallest_elements = []
         for element in elements:
-            if element <= limit and len(smallest_elements) < limit:
+            if self.pass_limit(self, element, limit) and len(smallest_elements) < limit:
                 smallest_elements.append(element)
         return smallest_elements
 
+    def pass_limit(self, element, limit):
+        return element <= limit
 
 class FindPairsTest(unittest.TestCase):
 
