@@ -6,7 +6,11 @@ class SmallestElement:
     def first_n_smallest(cls, elements, limit):
         if limit == 0:
             return []
-        return [elements[0]]
+        smallest_elements = []
+        for element in elements:
+            if element <= limit:
+                smallest_elements.append(element)
+        return smallest_elements
 
 
 class FindPairsTest(unittest.TestCase):
