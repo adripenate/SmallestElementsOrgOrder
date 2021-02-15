@@ -3,9 +3,9 @@ def first_n_smallest(elements, limit):
         return []
     smallest_elements = []
     for element in elements:
-        if element <= limit and len(smallest_elements) < limit:
+        if len(smallest_elements) < limit:
             add_element_to(smallest_elements, element)
-        elif element <= limit and max(smallest_elements) > element:
+        elif max(smallest_elements) > element:
             remove_biggest_elem(smallest_elements)
             add_element_to(smallest_elements, element)
 
